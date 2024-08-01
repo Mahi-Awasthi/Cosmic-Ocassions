@@ -1,0 +1,14 @@
+main{
+    position: relative;
+    height: 90vh;
+    background-image: url('1-Calder-Clark-Wedding-Planner-Dulcie+Nelson-Montana-Destination-Event-Design.jpg');
+    background-position: 50% 94%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+}
+.logo img{
+    margin-top:60px;
+    margin-left:400px;
+}
