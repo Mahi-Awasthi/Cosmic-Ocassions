@@ -1,0 +1,44 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+
+#back{
+    height:700px;
+    width:1200px;
+    background-image: url("portfolio\ background.jpeg");
+    background-size: contain;
+}
+#porfolio{
+    padding-left:500px;
+    padding-top:350px;
+    color:white;
+    font-size: 60px;
+    font: italic  "Fira Sans", serif;
+}
+#mid{
+    height:250px;
+    text-align: center;
+    background-color: white;
+
+}
+#gallery{
+    background-color: whitesmoke;
+    height:140
+    0px;
+    
+}
+#p{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+#celeb{
+    display: flex;
+   
+
+}
+#write{
+    font-family: cursive;
+    font-size: larger;
+}
