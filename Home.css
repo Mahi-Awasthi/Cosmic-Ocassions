@@ -38,9 +38,14 @@ main{
 .s-5 {
     margin-left:350px;
   }
-.logo2 img{
-    margin-top:60px;
-    margin-left:400px;
+.img-fluid{
+     max-width: 100%;
+     height: auto;
+}
+@media only screen and (max-width: 480px) {
+  img-fluid {
+    width: 100%;
+  }
 }
 /* ___________________________________ */
 .marq{
@@ -73,11 +78,12 @@ main{
     height:90vh;
     background-position: 50% 94%;
     margin-left: -200px;
+    width:700px;
 }
 #pic img{
     height:500px;
     width:350px;
-    margin-left:170px;
+    margin-left:50px;
     margin-top:40px;
 }
 .table1{
@@ -86,7 +92,7 @@ main{
     display: grid;
     grid-auto-rows:50px;
     gap:70px;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,3fr));
     font-family:"Fontspring-DEMO-theseasons-reg";
 
 }
