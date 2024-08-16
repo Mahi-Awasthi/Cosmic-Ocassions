@@ -109,3 +109,20 @@ main{
     height:150px;
     width:140px;
 }
+/* _______________________________ */
+#t1 img{
+  height:500px;
+    width:350px;
+}
+#t1{
+  background-image: url("CC-wedding-pattern-design-stripes.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0%;
+  padding: 0%;
+  height:90vh;
+  background-position: 50% 94%;
+  margin-left: -200px;
+  width:600px;
+}
