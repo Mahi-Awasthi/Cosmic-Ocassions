@@ -1,7 +1,33 @@
+  @font-face {
+    font-family:'theseasons';
+    src: url('Fontspring-DEMO-theseasons-reg.otf');
+    src: local('Fontspring-DEMO-theseasons-reg'), local('Fontspring-DEMO-theseasons-reg'),
+        url('Fontspring-DEMO-theseasons-reg.eot?#iefix') format('embedded-opentype'),
+        url('Fontspring-DEMO-theseasons-reg.woff2') format('woff2'),
+        url('Fontspring-DEMO-theseasons-reg.woff') format('woff'),
+        url('Fontspring-DEMO-theseasons-reg.ttf') format('truetype');
+    font-style: normal;
+}
 @font-face {
-    font-family:"Fontspring-DEMO-theseasons-reg";
-    src: url("Fontspring-DEMO-theseasons-reg.otf");
-  }
+  font-family:'Aileron';
+  src: url('Aileron-Regular.otf');
+  src: local('Aileron-Regular'), local('Aileron-Regular'),
+      url('Aileron-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Aileron-Regular.woff2') format('woff2'),
+      url('Aileron-Regular.woff') format('woff'),
+      url('Aileron-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family:'LibreBaskerville-Regular';
+  src: url('LibreBaskerville-Regular.ttf');
+  src: local('Aileron-Regular'), local('LibreBaskerville-Regular'),
+      url('LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
+      url('LibreBaskerville-Regular.woff2') format('woff2'),
+      url('LibreBaskerville-Regular.woff') format('woff'),
+      url('LibreBaskerville-Regular.ttf') format('truetype');
+  font-style: normal;
+}
 main{
     position: relative;
     height: 90vh;
@@ -14,6 +40,8 @@ main{
 }
 .navbar{
     height:70px;
+    font-family: "Libre Baskerville", serif;
+
 }
 .navbar-brand img {
     width: 80px;
@@ -59,7 +87,8 @@ main{
 }
 .geek2{
     display: flex;
-}
+    font-family: "Libre Baskerville", serif;
+  }
 .marq2 {
     border-bottom: 1px solid black;
     padding: 12px;
@@ -67,49 +96,10 @@ main{
 .geek2 img{
     height: 30px;
 }
+#b{
+  font-family: "Libre Baskerville", serif;
+}
 /* ___________________________________ */
-#pic{
-    background-image: url("CC-wedding-pattern-design-stripes.jpg");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0%;
-    padding: 0%;
-    height:90vh;
-    background-position: 50% 94%;
-    margin-left: -200px;
-    width:700px;
-}
-#pic img{
-    height:500px;
-    width:350px;
-    margin-left:50px;
-    margin-top:40px;
-}
-.table1{
-    width: 80vw;
-    margin:10px auto; 
-    display: grid;
-    grid-auto-rows:50px;
-    gap:70px;
-    grid-template-columns: repeat(auto-fill, minmax(300px,3fr));
-    font-family:"Fontspring-DEMO-theseasons-reg";
-
-}
-#pic1{
-    background-color: #6c7d5a;
-    color: #fff;
-    padding: 12px;
-    height:450px;
-    width: 550px;
-    margin-right:220px;
-    margin-top:60px;
-}
-.j img{
-    height:150px;
-    width:140px;
-}
-/* _______________________________ */
 #t1 img{
   height:500px;
     width:350px;
@@ -125,4 +115,112 @@ main{
   background-position: 50% 94%;
   margin-left: -200px;
   width:600px;
+}
+.k img{
+  height: 120px;
+  width:120px;
+}
+#t2{
+  background-color: #6c7d5a;}
+#t1,#t2{
+  color: #fff;
+  text-align: center;
+}
+/*
+@media screen and (min-width: 768px) {
+#A{
+  display: grid;
+    grid-auto-rows: 200px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+} 
+ _______________________________ */
+ .un{
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('dub.jpg');
+    background-position: 50% 94%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    padding-top:200px;
+ }
+ #a{
+  font-family: "Libre Baskerville", serif;
+ }
+ #hi{
+  font-family: "Libre Baskerville", serif;
+ }
+ #hi,#a{
+  color: #fff;
+  text-align: center;
+  margin-left: 120px;
+  margin-right:120px;
+ }
+ /* ______________________________________________________ */
+.booknine{
+  text-align: justify;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-left:20px;
+  margin-right:20px;
+}
+.im2:hover {
+  transform: scale(1.05); 
+}
+.im2 img{
+  width:190px;
+  height:190px;
+  transition: transform .5s ;
+  transition-delay:1ms;
+  border-radius: 12px;
+}
+#smp{
+  background-color:#a2cb1d;
+  color:white;
+  height:40px;
+  width:140px;
+  border-radius: 20px;
+  border:1px white;
+  margin-left:560px;
+  margin-top:20px
+}
+/* ______________________________________________________ */
+.loop {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Libre Baskerville", serif;
+}
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: white; 
+  padding: 20px; 
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#tx {
+  font-size: 1.5rem;
+  margin: 0; 
+  font-style: italic;
+}
+
+.overlay h2 {
+  font-size:3rem; 
+  margin: 0; 
+  line-height:1.6; 
 }
