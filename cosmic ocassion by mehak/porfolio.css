@@ -6,7 +6,7 @@ body{
 
 #back{
     height:700px;
-    width:1200px;
+    width:100%;
     background-image: url("portfolio\ background.jpeg");
     background-size: contain;
 }
@@ -16,6 +16,11 @@ body{
     color:white;
     font-size: 60px;
     font: italic  "Fira Sans", serif;
+}
+#arrow img{
+    text-decoration: none;
+    width:45px;
+    color: black;
 }
 #mid{
     height:250px;
