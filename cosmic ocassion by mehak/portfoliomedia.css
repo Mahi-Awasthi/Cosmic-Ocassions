@@ -1,0 +1,29 @@
+@media screen and (max-width:768px){
+    #back{
+        height:700px;
+        width:768px;
+        background-image: url("portfolio\ background.jpeg");
+        
+    }
+}
+
+
+@media screen and (max-width:425px){
+
+}
+
+
+
+@media screen and (max-width:375px){
+
+}
+
+
+@media screen and (max-width:320px){
+    #back{
+        height:700px;
+       width:100%;
+        background-image: url("portfolio\ background.jpeg");
+        background-size: cover;
+    }
+}
