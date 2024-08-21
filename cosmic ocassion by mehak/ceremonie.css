@@ -1,45 +1,33 @@
-body{
-    padding:0px;
-    margin:0px;
-    background-color: #62754c;
+body {
+  font-family: 'Baskervville SC', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #62754c;
 }
 
-
-.navbar{
-  height:70px;
-  font-family: "Libre Baskerville", serif;
-
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Fraunces', serif;
+  color: white;
 }
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
 .navbar-brand img {
-  width: 80px;
-  margin-top:-11px;
+  height: 100px;
+  margin-top:-40px;
 }
-.navbar-nav {
-  align-items: center;
+
+.nav-link {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2rem;
+  color: #fff !important;
+  margin: 0 15px;
 }
-.navbar .navbar-nav .nav-link {
-  color: #fff;
-  font-size: 1.1em;
-  padding: 0.5em 1em;
-}
-@media screen and (min-width: 768px) {
-  .navbar-brand img {
-    width: 100px;
-  }
-  .navbar-brand {
-    margin-right: 0;
-    padding: 0 1em;
-  }
-}  
-.s-5 {
-  margin-left:350px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
-
-
-
-
-
 .container {
   text-align: center;
   color: white;
@@ -49,19 +37,22 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("ceremonie\ main.jpeg");
+  
+background-image: url("ceremonie\ main.jpeg");
   background-size: cover;
   background-position: center;
-  
-/*  this is where the magic happens:  */
   background-attachment: fixed;
 }
-h1 {
-    font-weight: 700;
-    font-size: 3rem;
-  }
- 
-  .blank,
+
+
+#contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+.blank,
 .other {
   width: 100%;
   min-height: 40vh;
@@ -71,128 +62,59 @@ h1 {
 
 
 }
+#ima {
+  border: 10px solid rgb(223, 220, 220);
+  padding: 13px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 
-#mid{
-    height:250px;
-    text-align: center;
-    background-color: white;
+#ima:hover {
+  transform: scale(1.05);
+}
 
-}
-#contain{
-  width: 90vw;
-  margin: 20px auto; 
-  display: grid;
-  grid-auto-rows: 200px;
-  margin-left: 20px;
-  gap: 100px 80px;
-  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-}
-#ima:hover{
-  transform:scale(1.1);
 
-}
-#ima{
-border:1px transparent;
-height:140%;
-width:110%;
-border-radius: 25px;
-border: 10px solid rgb(223, 220, 220);
-padding:20px;
-transition:transform 0.5s ease;
-transition-delay:1ms;
-}
-@media screen and (max-width:768px){
-  body{
-      padding:0px;
-      margin:0px;
-      background-color: #62754c;
+
+@media (max-width: 768px) {
+  #ima {
+      width: 200px;
+      height: 250px;
   }
-  .blank,
-  .other {
-    width: 768px;
-    min-height: 40vh;
-    background-color: var(--color);
-    background-image: url("wed.jpg");
-    background-size: cover;
-  
-  
-  }
-  
-  #mid{
-      height:250px;
-      text-align: center;
-      background-color: white;
-  width:768px;
-  }
-  .container {
-      text-align: center;
-      color: #62754c;
-      width:768px;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url("receptionmain.jpg");
-      background-size: cover;
-      background-position: center;
-      
-    /*  this is where the magic happens:  */
-      background-attachment: fixed;
-    }
-    h1 {
-        font-weight: 700;
-        font-size: 3rem;
-        color:white;
-      }
-}
-@media screen and (max-width:475px){
-body{
-    padding:0px;
-    margin:0px;
-    background-color: #62754c;
-}
-.navbar{
-  height:70px;
-  font-family: "Libre Baskerville", serif;
-width:475px;
-}
-.blank,
-.other {
-  width: 475px;
-  min-height: 40vh;
-  background-color: var(--color);
-  background-image: url("wed.jpg");
-  background-size: cover;
 
-
+  .navbar-nav .nav-link {
+      font-size: 1rem;
+      margin: 0 10px;
+  }
+  .navbar-brand img {
+      height: 100px;
+      margin-bottom:-30px;
+  }
 }
 
-#mid{
-    height:250px;
-    text-align: center;
-    background-color: white;
-width:475px;
-}
-.container {
-    text-align: center;
-    color: #62754c;
-    width:475px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("receptionmain.jpg");
-    background-size: cover;
-    background-position: center;
-    
-  /*  this is where the magic happens:  */
-    background-attachment: fixed;
+@media (max-width: 576px) {
+  #ima {
+      width: 150px;
+      height: 200px;
   }
+
   h1 {
-      font-weight: 700;
-      font-size: 3rem;
-      color:white;
-    }
+      font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+      height: 100px;
+      margin-bottom:-20px;
+  }
+
+  .navbar-nav {
+      text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+      margin: 5px 0;
+  }
+}
+.blank {
+  height: 20px;
 }
