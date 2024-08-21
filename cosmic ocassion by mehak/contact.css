@@ -1,5 +1,89 @@
+@font-face {
+    font-family:'LibreBaskerville-Regular';
+    src: url('LibreBaskerville-Regular.ttf');
+    src: local('Aileron-Regular'), local('LibreBaskerville-Regular'),
+        url('LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Regular.woff2') format('woff2'),
+        url('LibreBaskerville-Regular.woff') format('woff'),
+        url('LibreBaskerville-Regular.ttf') format('truetype');
+    font-style: normal;
+  }
+  *{
+    font-family:'LibreBaskerville-Regular';
+
+  }
 body{
     padding:0px;
     margin:0px;
-    background-color: #62754c;
+    background-color: #6c7d5a;
+}
+#contactus{
+    text-align: center;
+    color:white;
+    font-family:Sans serif fonts;
+    font-size: 50px;
+    
+}
+#p{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-family:'LibreBaskerville-Regular';
+
+}
+#contact{
+    color:white;
+    margin-left:300px;
+    font-size: 25px;
+    font-family:'LibreBaskerville-Regular';
+
+}
+#fname,#lname,#Wedding,#location,#cat,#guest{
+    height:25px;
+    width:250px;
+}
+#email{
+    height:25px;
+    width:650px;
+}
+#phone{
+    height:25px;
+    width:550px;
+}
+#add{
+    height:25px;
+    width:750px;
+}
+#city{
+    height:25px;
+    width:300px;
+}
+#state{
+    height:25px;
+    width:220px;
+}
+#code{
+    height:25px;
+    width:575px;
+}
+#c{
+    height:25px;
+    width:660px;
+}
+#w{
+    height:25px;
+    width:470px;
+}
+
+#cat{
+    height:25px;
+    width:420px;
+}
+#guest{
+    height:25px;
+    width:340px;
+}
+#dest{
+    height:25px;
+    width:610px;
 }
