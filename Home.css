@@ -311,3 +311,16 @@ main{
   font-size:60px;
   text-align: center;
 }
+.link li{
+  background-image: url('Ann-Travis-Botanical4-removebg-preview.png');
+}
+.link ul,li,a{
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+}
+#lg{
+  height: 50px;
+  width: 50px;
+}
