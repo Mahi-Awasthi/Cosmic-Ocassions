@@ -28,6 +28,16 @@
       url('LibreBaskerville-Regular.ttf') format('truetype');
   font-style: normal;
 }
+@font-face {
+  font-family:'Absolute-Beauty-Script-Regular';
+  src: url('Absolute-Beauty-Script-Regular.otf');
+  src: local('Absolute-Beauty-Script-Regular'), local('Absolute-Beauty-Script-Regular'),
+      url('Absolute-Beauty-Script-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Absolute-Beauty-Script-Regular.woff2') format('woff2'),
+      url('Absolute-Beauty-Script-Regular.woff') format('woff'),
+      url('Absolute-Beauty-Script-Regular.ttf') format('truetype');
+  font-style: normal;
+}
 body{
   background-color: #f7f9ec;
 }
@@ -210,6 +220,7 @@ main{
   font-size: 1.5rem;
   margin: 0; 
   font-style: italic;
+  font-family:'Absolute-Beauty-Script-Regular';
 }
 .overlay h2 {
   font-size:3rem; 
