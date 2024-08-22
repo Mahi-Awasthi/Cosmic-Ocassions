@@ -29,17 +29,12 @@
   font-style: normal;
 }
 @font-face {
-  font-family:'Absolute-Beauty-Script-Regular';
-  src: url('Absolute-Beauty-Script-Regular.otf');
-  src: local('Absolute-Beauty-Script-Regular'), local('Absolute-Beauty-Script-Regular'),
-      url('Absolute-Beauty-Script-Regular.eot?#iefix') format('embedded-opentype'),
-      url('Absolute-Beauty-Script-Regular.woff2') format('woff2'),
-      url('Absolute-Beauty-Script-Regular.woff') format('woff'),
-      url('Absolute-Beauty-Script-Regular.ttf') format('truetype');
+  font-family: 'Absolute Beauty';
+  src: url('Absolute-Beauty-Script-Regular.otf') format('opentype');
   font-style: normal;
 }
 body{
-  background-color: #f7f9ec;
+  background-color: #fffffc;
 }
 main{
     position: relative;
@@ -284,6 +279,35 @@ main{
   }
 }
 /* ------------------------------------------- */
-@media screen and (min-width: 320px) {
+ footer{
+  background-color: #6c7d5a;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.logo img{
+  height:100px;
+}
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  .logo {
+      font-size: 1.5rem;
+  }
 
+  .line {
+      margin: 0 10px;
+  }
+}
+.next p{
+  font-family: 'Absolute Beauty';
+  color: #fff;
+  font-size:60px;
+  text-align: center;
 }
