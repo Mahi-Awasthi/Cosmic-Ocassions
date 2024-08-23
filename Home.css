@@ -69,7 +69,7 @@ main{
     margin-left:350px;
   }
 .img-fluid{
-     max-width: 100%;
+     max-width: 100%;                                                                                      
      height: auto;
 }
 @media only screen and (max-width: 480px) {
@@ -137,27 +137,19 @@ main{
 #t1, #t2 {
   padding: 10px;
 }
-
-/* Ensure the images in #t1 and #t2 are responsive */
 #t1 img, #t2 img {
   max-width: 100%;
   height: auto;
 }
-
-/* Styles for the logo */
 .k img {
   height: 120px;
   width: 120px;
 }
-
-/* Styles for #t2 */
 #t2 {
   background-color: #6c7d5a;
   color: #fff;
   text-align: center;
 }
-
-/* Responsive design: stack columns on smaller screens */
 @media (max-width: 768px) {
   table {
     width: 100%;
