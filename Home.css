@@ -289,11 +289,10 @@ main{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
 }
 table{
-  margin-left: 8%;
-  margin-right:8%;
+  margin-left:0;
+  margin-right:0;
 }
 .logo-container {
   background-color: #6c7d5a;
@@ -310,6 +309,9 @@ table{
   background-color: #fff;
   margin: 0 20px;
 }
+/* #one,#two,#three{
+
+} */
 @media (max-width: 768px) {
   .logo {
       font-size: 1.5rem;
@@ -354,8 +356,8 @@ table{
 }
 
 #lg{
-  height:100px;
-  width:100px;
+  height:130px;
+  width:130px;
 }
 #button{
   text-decoration: none;
