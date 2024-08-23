@@ -11,11 +11,6 @@
 @font-face {
   font-family:'Aileron';
   src: url('Aileron-Regular.otf');
-  src: local('Aileron-Regular'), local('Aileron-Regular'),
-      url('Aileron-Regular.eot?#iefix') format('embedded-opentype'),
-      url('Aileron-Regular.woff2') format('woff2'),
-      url('Aileron-Regular.woff') format('woff'),
-      url('Aileron-Regular.ttf') format('truetype');
   font-style: normal;
 }
 @font-face {
@@ -107,7 +102,7 @@ main{
   font-family: "Libre Baskerville", serif;
 }
 /* ___________________________________ */
-#t1 img{
+/* #t1 img{
   height:500px;
     width:350px;
 }
@@ -132,7 +127,52 @@ main{
 #t1,#t2{
   color: #fff;
   text-align: center;
+} */
+/* Basic styles for the table */
+#A {
+  width: 100%;
+  border-collapse: collapse;
 }
+
+#t1, #t2 {
+  padding: 10px;
+}
+
+/* Ensure the images in #t1 and #t2 are responsive */
+#t1 img, #t2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for the logo */
+.k img {
+  height: 120px;
+  width: 120px;
+}
+
+/* Styles for #t2 */
+#t2 {
+  background-color: #6c7d5a;
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsive design: stack columns on smaller screens */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  #A tr {
+    display: block;
+  }
+
+  #t1, #t2 {
+    display: block;
+    width: 100%;
+  }
+}
+
 /*_______________________________ */
  .un{
     position: relative;
@@ -144,6 +184,7 @@ main{
     margin: 0%;
     padding: 0%;
     padding-top:200px;
+    background-attachment: fixed;
  }
  #a{
   font-family: "Libre Baskerville", serif;
@@ -227,36 +268,7 @@ main{
   .logo2{
     margin-top:-100px;
   }
-  #t1{
-    background-image: url("CC-wedding-pattern-design-stripes.jpg");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0%;
-    padding: 0%;
-    height:90vh;
-    background-position:80% 90%;
-    margin-left: -200px;
-    width:128vw;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #t1 img{
-    height:370px;
-    width:280px;
-    align-self: center;
-    margin-left:25%;
-    margin-top:5%;
-  }
-  #t2{
-    height: 90vh;
-    text-align: center;
-    padding-top:45px;
-  }
-  #t2,#t1{
-    display: flex;
-    flex-direction: column;
-  }
+
   #hi{
     margin-top:-100px;
   }
@@ -281,8 +293,18 @@ main{
 /* ------------------------------------------- */
  footer{
   background-color: #6c7d5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+table{
+  margin-left: 8%;
+  margin-right:8%;
 }
 .logo-container {
+  background-color: #6c7d5a;
   display: flex;
   align-items: center;
   color: #fff;
@@ -305,22 +327,53 @@ main{
       margin: 0 10px;
   }
 }
+.next h6{
+  font-family: "Libre Baskerville", serif;
+  color:white;
+  font-size:55%;
+}
 .next p{
   font-family: 'Absolute Beauty';
   color: #fff;
   font-size:60px;
   text-align: center;
 }
-.link li{
+#link {
   background-image: url('Ann-Travis-Botanical4-removebg-preview.png');
-}
-.link ul,li,a{
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
   list-style: none;
   text-decoration: none;
   color: #fff;
   font-family: "Libre Baskerville", serif;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+#link li {
+  margin: 10px 0;
+}
+
+#link li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 #lg{
   height:100px;
   width:100px;
+}
+#button{
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  color: #fff;
+  border: 1.5px solid #fff;
+  padding:12px;
+  font-size: small;
+}
+#button:hover{
+  background-color: #fff;
+  color: #6c7d5a;
 }

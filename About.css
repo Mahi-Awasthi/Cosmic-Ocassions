@@ -73,7 +73,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("banner1\ \(1\).jpg");
+    background-image: url("2017_Piper_and_Muse_0124.jpg");
     background-size: cover;
     background-position: center;
     
@@ -145,3 +145,90 @@
     max-width:500px;
 }
 /* ------------------------------------------- */
+/* ------------------------------------------- */
+footer{
+  background-color: #6c7d5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+table{
+  margin-left: 8%;
+  margin-right:8%;
+}
+.logo-container {
+  background-color: #6c7d5a;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.logo img{
+  height:100px;
+}
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  .logo {
+      font-size: 1.5rem;
+  }
+
+  .line {
+      margin: 0 10px;
+  }
+}
+.next h6{
+  font-family: "Libre Baskerville", serif;
+  color:white;
+  font-size:55%;
+}
+.next p{
+  font-family: 'Absolute Beauty';
+  color: #fff;
+  font-size:60px;
+  text-align: center;
+}
+#link {
+  background-image: url('Ann-Travis-Botanical4-removebg-preview.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#link li {
+  margin: 10px 0;
+}
+
+#link li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#lg{
+  height:100px;
+  width:100px;
+}
+#button{
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  color: #fff;
+  border: 1.5px solid #fff;
+  padding:12px;
+  font-size: small;
+}
+#button:hover{
+  background-color: #fff;
+  color: #6c7d5a;
+}
