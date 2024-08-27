@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #62754c;
+  background-color: white;
 }
 
 h1 {
@@ -62,7 +62,7 @@ h1 {
 
 }
 #ima {
-  border: 10px solid rgb(223, 220, 220);
+  border: 10px solid #62754c;
   padding: 13px;
   margin: 10px;
   border-radius: 10px;
