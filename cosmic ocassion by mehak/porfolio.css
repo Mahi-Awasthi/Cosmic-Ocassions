@@ -1,49 +1,156 @@
-body{
-    padding:0px;
-    margin:0px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 
-#back{
-    height:700px;
-    width:100%;
-    background-image: url("portfolio\ background.jpeg");
+#back {
+    height: 70vw; 
+    width: 100%;
+    background-image: url("portfolio background.jpeg");
     background-size: cover;
-}
-#porfolio{
-    padding-left:500px;
-    padding-top:350px;
-    color:white;
-    font-size: 60px;
-    font: italic  "Fira Sans", serif;
-}
-#arrow img{
-    text-decoration: none;
-    width:45px;
-    color: black;
-}
-#mid{
-    height:250px;
-    text-align: center;
-    background-color: white;
-
-}
-#gallery{
-    background-color: whitesmoke;
-    height:140
-    0px;
-    
-}
-#p{
-    padding-left: 30px;
-    padding-top: 20px;
-}
-#celeb{
+    background-position: center;
     display: flex;
-   
-
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
-#write{
-    font-family: cursive;
-    font-size: larger;
+
+#portfolio {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+
+#mid {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+#gallery {
+    background-color: whitesmoke;
+    height: 1500px; 
+    padding: 20px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+table {
+    width: 100%; 
+    border-spacing: 10px;
+    border-collapse: collapse; 
+}
+
+td {
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+#write {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+#arrow img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    #back {
+        height: 50vw;
+    }
+
+    #portfolio {
+        font-size: 40px;
+    }
+
+    #mid {
+        font-size: 14px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    td {
+        display: block;
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    #write {
+        font-size: 16px;
+    }
+    #gallery {
+        height: 3500px; 
+    }
+}
+
+@media (max-width: 576px) {
+    #back {
+        height: 40vw;
+    }
+
+    #portfolio {
+        font-size: 35px;
+    }
+
+    #mid {
+        font-size: 12px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    td {
+        display: block;
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    #write {
+        font-size: 14px;
+    }
+
+    #arrow img {
+        width: 30px;
+        height: 30px;
+    }
 }
