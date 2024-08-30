@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #6c7d5a;
 }
 
 h1 {
@@ -51,6 +51,7 @@ h1 {
     justify-content: center;
     margin: 20px auto;
     max-width: 1200px;
+    background-color: white;
 }
 .blank,
   .other {
