@@ -102,66 +102,80 @@ main{
   font-family: "Libre Baskerville", serif;
 }
 /* ___________________________________ */
-/* #t1 img{
-  height:500px;
-    width:350px;
-}
-#t1{
-  background-image: url("umgo.jpg");
+.container1 {
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0%;
-  padding: 0%;
-  height:90vh;
-  background-position: 50% 94%;
-  margin-left: -200px;
-  width:600px;
-}
-.k img{
-  height: 120px;
-  width:120px;
-}
-#t2{
-  background-color: #6c7d5a  ;}
-#t1,#t2{
-  color: #fff;
-  text-align: center;
-} */
-/* Basic styles for the table */
-#A {
-  width: 100%;
-  border-collapse: collapse;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-sizing: border-box;
 }
 
-#t1, #t2 {
-  padding: 10px;
+.image-section img {
+  width:60%;
+  height:50%;
+  border-radius: 10px;
 }
-#t1 img, #t2 img {
-  max-width: 100%;
-  height: auto;
-}
-.k img {
-  height: 120px;
-  width: 120px;
-}
-#t2 {
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
   background-color: #6c7d5a;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Libre Baskerville", serif;
+}
+
+.text-box h3 {
+  font-size:14px;
   color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
   text-align: center;
 }
+
+.text-box p {
+  font-size:18px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button1 {
+  display: inline-block;
+  background-color: #6c7d5a;
+  color: #f2f1f1;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  border: 1px solid white;
+}
+
+.button1:hover {
+  background-color: #fff;
+  color: #6c7d5a;
+}
+
 @media (max-width: 768px) {
-  table {
-    width: 100%;
+  .image-section img {
+    width:100%;
+    height:40%;
+    border-radius: 10px;
+  }
+  .text-box {
+      position: static;
+      transform: none;
+      max-width: 100%;
+      margin: 20px auto;
   }
 
-  #A tr {
-    display: block;
-  }
-
-  #t1, #t2 {
-    display: block;
-    width: 100%;
+  .text-box p {
+      font-size: 20px;
   }
 }
 
@@ -293,6 +307,7 @@ main{
 table{
   margin-left:0;
   margin-right:0;
+  margin-bottom:1%;
 }
 .logo-container {
   background-color: #6c7d5a;
@@ -309,9 +324,6 @@ table{
   background-color: #fff;
   margin: 0 20px;
 }
-/* #one,#two,#three{
-
-} */
 @media (max-width: 768px) {
   .logo {
       font-size: 1.5rem;
@@ -331,6 +343,11 @@ table{
   color: #fff;
   font-size:60px;
   text-align: center;
+}
+.next h7{
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+  font-size:70%;
 }
 #link {
   background-image: url('Ann-Travis-Botanical4-removebg-preview.png');
@@ -356,9 +373,6 @@ table{
 }
 #one{
   margin-right:1px;
-}
-#two,#three{
-  padding: 2%;
 }
 #lg{
   height:130px;
