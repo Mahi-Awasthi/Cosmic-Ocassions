@@ -234,3 +234,20 @@ footer{
         width: 100%;
     }
 }
+/* ------------------- */
+.emoji {
+  font-size: 36px;
+  cursor: pointer;
+}
+.emoji.selected {
+  border: 2px solid #4CAF50;
+  border-radius: 50%;
+  padding: 5px;
+}
+#feed{
+  background-color: transparent;
+border:2px solid white ;
+}
+#bu{
+  background-color:#6c7d5a;
+}
