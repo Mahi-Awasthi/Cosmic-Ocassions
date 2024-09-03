@@ -238,3 +238,17 @@ table{
   background-color: #fff;
   color: #6c7d5a;
 }
+/* --------------- */
+#faq{
+  font-family:'theseasons';
+    text-align: center;
+    font-weight: bold;
+}
+.accordion-button:hover {
+  background-color: #6c7d5a;
+  color: #fff;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #6c7d5a;
+}
