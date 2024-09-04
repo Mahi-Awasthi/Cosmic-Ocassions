@@ -67,11 +67,9 @@ h1 {
   max-width: 1200px;
   background-color: white;
 }
-.blank,
-.other {
+.blank {
   width: 100%;
   min-height: 40vh;
-  background-color: var(--color);
   background-image: url("wed.jpg");
   background-size: cover;
 
