@@ -58,7 +58,7 @@ body {
     object-fit: cover; 
 } */
 .un{
-    position: relative;
+    
     height: 90vh;
     background-image:url('services main.jpg');
     background-position: 50% 94%;
