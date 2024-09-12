@@ -76,8 +76,6 @@
     background-image: url("2017_Piper_and_Muse_0124.jpg");
     background-size: cover;
     background-position: center;
-    
-  /*  this is where the magic happens:  */
     background-attachment: fixed;
   }
 /* ------------------------------------------- */
