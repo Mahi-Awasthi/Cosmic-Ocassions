@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h1>Event Planner</h1>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li>Messages</li>
+                <li>Tasks</li>
+                <li>Calendar</li>
+            </ul>
+        </nav>
+
+        <!-- Main Dashboard -->
+        <div class="main">
+            <header>
+                <input type="text" placeholder="Search">
+                <div class="user-profile">
+                    <p>User Name</p>
+                    <img src="profile.jpg" alt="User Profile">
+                </div>
+            </header>
+
+            <div class="grid">
+                <!-- Event Overview -->
+                <section class="card event-overview">
+                    <h2>Event Overview</h2>
+                    <p>Date: October 10, 2024</p>
+                    <p>Time: 6:00 PM</p>
+                    <p>Location: Central Park, NY</p>
+                    <p>Number of Guests: 150</p>
+                </section>
+
+                <!-- Timeline -->
+                <section class="card timeline">
+                    <h2>Timeline</h2>
+                    <ul>
+                        <li>Booking venue - Completed</li>
+                        <li>Hiring vendors - In Progress</li>
+                        <li>Finalizing menu - Pending</li>
+                    </ul>
+                </section>
+
+                <!-- Task List -->
+                <section class="card task-list">
+                    <h2>Task List</h2>
+                    <ul>
+                        <li>Confirm catering <input type="checkbox"></li>
+                        <li>Send invitations <input type="checkbox"></li>
+                        <li>Book entertainment <input type="checkbox"></li>
+                    </ul>
+                </section>
+
+                <!-- Document Library -->
+                <section class="card document-library">
+                    <h2>Document Library</h2>
+                    <ul>
+                        <li><a href="#">Contract.pdf</a></li>
+                        <li><a href="#">Event Plan.docx</a></li>
+                        <li><a href="#">Invoice.pdf</a></li>
+                    </ul>
+                </section>
+
+                <!-- Communication Log -->
+                <section class="card communication-log">
+                    <h2>Communication Log</h2>
+                    <ul>
+                        <li>Message from Planner: "Confirm vendor details"</li>
+                        <li>Email to client: "Event updates"</li>
+                    </ul>
+                </section>
+
+                <!-- Budget Tracker -->
+                <section class="card budget-tracker">
+                    <h2>Budget Tracker</h2>
+                    <p>Total Budget: $10,000</p>
+                    <p>Spent: $7,500</p>
+                    <p>Remaining: $2,500</p>
+                </section>
+
+                <!-- Vendor Information -->
+                <section class="card vendor-info">
+                    <h2>Vendor Information</h2>
+                    <ul>
+                        <li>Caterer: John's Catering - <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li>Florist: Rose Blossoms - <a href="tel:+1987654321">+1 (987) 654-321</a></li>
+                    </ul>
+                </section>
+
+                <!-- Design and Layout -->
+                <section class="card design-layout">
+                    <h2>Design and Layout</h2>
+                    <button id="upload-design">Upload Venue Design</button>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

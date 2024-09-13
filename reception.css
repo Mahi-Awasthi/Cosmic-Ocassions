@@ -73,8 +73,78 @@ h1 {
   background-image: url("wed.jpg");
   background-size: cover;
 
-
 }
+/* ------------------------------------------ */
+
+  
+.container1 {
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:80px;
+   padding : 50px;
+   justify-content: center;
+  
+ }
+ 
+ .container1 .card {
+   position: relative;
+   max-width : 350px;
+   height : 280px;  
+   background-color : #fff;
+   margin : 30px 10px;
+   padding : 20px 15px ;
+   display : flex;
+   flex-direction : column;
+   box-shadow : 0 5px 10px rgba(0,0,0,0.5);
+   transition : 0.3s ease-in-out;
+   border-radius : 15px;
+ }
+ .container1 .card:hover {
+   height : 320px;    
+ }
+ 
+ 
+ .container1 .card .image {
+   position : relative;
+   width : 290px;
+   height : 230px;
+   top : -40%;
+   left: 8px;
+   box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+   z-index : 1;
+ }
+ 
+ .container1 .card .image img {
+   max-width : 100%;
+   border-radius : 15px;
+ }
+ 
+ .container1 .card .content {
+   position : relative;
+   top : -140px;
+   padding : 10px 15px;
+   color : #111;
+   text-align : center;
+   visibility : hidden;
+   opacity : 0;
+   transition : 0.3s ease-in-out;
+     
+ }
+ 
+ .container1 .card:hover .content {
+    margin-top : 30px;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.3s;
+   
+ }
+ #pika{
+  /* height:85%;
+  width:200px; */
+  height:100%;
+  width:300px;
+ }
+ /* ------------------------------------------ */
 .written{
   font-size:2rem;
   background-color: white;
@@ -88,17 +158,7 @@ h1 {
   height: 100%;
   object-fit: cover; 
 }
-#ima {
-  border: 10px solid #6c7d5a;
-  padding: 13px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
 
-#ima:hover {
-  transform: scale(1.05);
-}
 
 footer{
   background-color: #6c7d5a;
