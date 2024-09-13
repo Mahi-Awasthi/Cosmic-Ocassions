@@ -29,10 +29,12 @@
   font-style: normal;
 }
 main {
-  background-image: url(CC-wedding-pattern-design-stripes.jpg);
+  /* background-image: url(CC-wedding-pattern-design-stripes.jpg);
   background-position:90% 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: rgb(108,125,90);
+background: radial-gradient(circle, rgba(108,125,90,1) 0%, rgba(185,194,177,1) 26%, rgba(255,255,255,1) 74%);
 }
 .navbar{
     height:70px;
