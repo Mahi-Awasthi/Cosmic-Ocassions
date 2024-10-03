@@ -3,108 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Planner Dashboard</title>
+    <title>Conceptualize Your Event</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
-        <nav class="sidebar">
-            <h1>Event Planner</h1>
-            <ul>
-                <li class="active">Dashboard</li>
-                <li>Messages</li>
-                <li>Tasks</li>
-                <li>Calendar</li>
-            </ul>
-        </nav>
+        <h1>Conceptualize Your Event</h1>
+        <form id="conceptualizeForm">
+            <label for="eventPurpose">Event Purpose:</label>
+            <select id="eventPurpose" name="eventPurpose" required>
+                <option value="">Select...</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Other">Other</option>
+            </select>
 
-        <!-- Main Dashboard -->
-        <div class="main">
-            <header>
-                <input type="text" placeholder="Search">
-                <div class="user-profile">
-                    <p>User Name</p>
-                    <img src="profile.jpg" alt="User Profile">
-                </div>
-            </header>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
 
-            <div class="grid">
-                <!-- Event Overview -->
-                <section class="card event-overview">
-                    <h2>Event Overview</h2>
-                    <p>Date: October 10, 2024</p>
-                    <p>Time: 6:00 PM</p>
-                    <p>Location: Central Park, NY</p>
-                    <p>Number of Guests: 150</p>
-                </section>
+            <label for="date">Preferred Date(s):</label>
+            <input type="date" id="date" name="date" required>
 
-                <!-- Timeline -->
-                <section class="card timeline">
-                    <h2>Timeline</h2>
-                    <ul>
-                        <li>Booking venue - Completed</li>
-                        <li>Hiring vendors - In Progress</li>
-                        <li>Finalizing menu - Pending</li>
-                    </ul>
-                </section>
+            <label for="budget">Estimated Budget:</label>
+            <input type="text" id="budget" name="budget" required>
 
-                <!-- Task List -->
-                <section class="card task-list">
-                    <h2>Task List</h2>
-                    <ul>
-                        <li>Confirm catering <input type="checkbox"></li>
-                        <li>Send invitations <input type="checkbox"></li>
-                        <li>Book entertainment <input type="checkbox"></li>
-                    </ul>
-                </section>
+            <label for="theme">Theme or Style:</label>
+            <select id="theme" name="theme">
+                <option value="">Select...</option>
+                <option value="Formal">Formal</option>
+                <option value="Casual">Casual</option>
+                <option value="Rustic">Rustic</option>
+                <option value="Modern">Modern</option>
+            </select>
 
-                <!-- Document Library -->
-                <section class="card document-library">
-                    <h2>Document Library</h2>
-                    <ul>
-                        <li><a href="#">Contract.pdf</a></li>
-                        <li><a href="#">Event Plan.docx</a></li>
-                        <li><a href="#">Invoice.pdf</a></li>
-                    </ul>
-                </section>
+            <label for="venue">Venue Preferences:</label>
+            <select id="venue" name="venue">
+                <option value="">Select...</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Indoor">Indoor</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Restaurant">Restaurant</option>
+            </select>
 
-                <!-- Communication Log -->
-                <section class="card communication-log">
-                    <h2>Communication Log</h2>
-                    <ul>
-                        <li>Message from Planner: "Confirm vendor details"</li>
-                        <li>Email to client: "Event updates"</li>
-                    </ul>
-                </section>
+            <label for="foodBeverage">Food and Beverage:</label>
+            <select id="foodBeverage" name="foodBeverage">
+                <option value="">Select...</option>
+                <option value="Sit-Down">Sit-Down</option>
+                <option value="Buffet">Buffet</option>
+                <option value="Hors D'oeuvres">Hors D'oeuvres</option>
+            </select>
 
-                <!-- Budget Tracker -->
-                <section class="card budget-tracker">
-                    <h2>Budget Tracker</h2>
-                    <p>Total Budget: $10,000</p>
-                    <p>Spent: $7,500</p>
-                    <p>Remaining: $2,500</p>
-                </section>
+            <label for="entertainment">Entertainment:</label>
+            <input type="checkbox" id="dj" name="entertainment" value="DJ">
+            <label for="dj" class="inline">DJ</label>
+            <input type="checkbox" id="liveBand" name="entertainment" value="Live Band">
+            <label for="liveBand" class="inline">Live Band</label>
+            <input type="checkbox" id="photoBooth" name="entertainment" value="Photo Booth">
+            <label for="photoBooth" class="inline">Photo Booth</label>
 
-                <!-- Vendor Information -->
-                <section class="card vendor-info">
-                    <h2>Vendor Information</h2>
-                    <ul>
-                        <li>Caterer: John's Catering - <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                        <li>Florist: Rose Blossoms - <a href="tel:+1987654321">+1 (987) 654-321</a></li>
-                    </ul>
-                </section>
+            <label for="decorations">Decorations:</label>
+            <select id="decorations" name="decorations">
+                <option value="">Select...</option>
+                <option value="Flowers">Flowers</option>
+                <option value="Balloons">Balloons</option>
+                <option value="Lighting">Lighting</option>
+            </select>
 
-                <!-- Design and Layout -->
-                <section class="card design-layout">
-                    <h2>Design and Layout</h2>
-                    <button id="upload-design">Upload Venue Design</button>
-                </section>
-            </div>
-
-        </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formData"></div>
     </div>
-
     <script src="dashboard.js"></script>
 </body>
 </html>
