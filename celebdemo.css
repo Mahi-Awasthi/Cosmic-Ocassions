@@ -57,9 +57,6 @@ h1 {
     background-position: center;
     background-attachment: fixed;
 }
-
-
-
 .blank {
     width: 100%;
     min-height: 30vh;
@@ -67,7 +64,21 @@ h1 {
     background-image: url("wed.jpg");
     background-size: cover;
   }
-  
+@media (max-width: 768px) {
+    #ima {
+        width: 200px;
+        height: 250px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+    .navbar-brand img {
+        height: 100px;
+        margin-bottom:-30px;
+    }
+}
 /* ------------------------------------------ */
 
   
@@ -139,142 +150,124 @@ h1 {
   width:300px;
  }
  /* ------------------------------------------ */
-
-
-
-@media (max-width: 768px) {
-    #ima {
-        width: 200px;
-        height: 250px;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 1rem;
-        margin: 0 10px;
-    }
-    .navbar-brand img {
-        height: 100px;
-        margin-bottom:-30px;
-    }
+ footer{
+  background-color: #6c7d5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-footer{
-    background-color: #6c7d5a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+table{
+  margin-left:0;
+  margin-right:0;
+  margin-bottom:1%;
+}
+.logo-container {
+  background-color: #6c7d5a;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.logo img{
+  height:100px;
+}
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  .logo {
+      font-size: 1.5rem;
   }
-  table{
-    margin-left:0;
-    margin-right:0;
-    margin-bottom:1%;
-  }
-  .logo-container {
-    background-color: #6c7d5a;
-    display: flex;
-    align-items: center;
-    color: #fff;
-  }
-  .logo img{
-    height:100px;
-  }
+
   .line {
-    flex-grow: 1;
-    height: 2px;
-    background-color: #fff;
-    margin: 0 20px;
+      margin: 0 10px;
   }
-  @media (max-width: 768px) {
-    .logo {
-        font-size: 1.5rem;
-    }
-  
-    .line {
-        margin: 0 10px;
-    }
-  }
-  .next h6{
-    font-family: "Libre Baskerville", serif;
-    color:white;
-    font-size:55%;
-  }
-  .next p{
-    font-family: 'Absolute Beauty';
-    color: #fff;
-    font-size:60px;
-    text-align: center;
-  }
-  .next h7{
-    color: #fff;
-    font-family: "Libre Baskerville", serif;
-    font-size:70%;
-  }
-  #link {
-    background-image: url('Ann-Travis-Botanical4-removebg-preview.png');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    list-style: none;
-    text-decoration: none;
-    color: #c7a4a4;
-    font-family: "Libre Baskerville", serif;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  #link li {
-    margin: 10px 0;
-  }
-  
-  #link li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  #one{
-    margin-right:1px;
-  }
-  #lg{
-    height:130px;
-    width:130px;
-  }
-  #button{
-    text-decoration: none;
-    font-family: "Libre Baskerville", serif;
-    color: #fff;
-    border: 1.5px solid #fff;
-    padding:12px;
-    font-size: small;
-  }
-  #button:hover{
-    background-color: #fff;
-    color: #6c7d5a;
-  }
+}
+.next h6{
+  font-family: "Libre Baskerville", serif;
+  color:white;
+  font-size:55%;
+}
+.next p{
+  font-family: 'Absolute Beauty';
+  color: #fff;
+  font-size:60px;
+  text-align: center;
+}
+.next h7{
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+  font-size:70%;
+}
+#link {
+  background-image: url('Ann-Travis-Botanical4-removebg-preview.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #c7a4a4;
+  font-family: "Libre Baskerville", serif;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#link li {
+  margin: 10px 0;
+}
+
+#link li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+#one{
+  margin-right:1px;
+}
+#lg{
+  height:130px;
+  width:130px;
+}
+#button{
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  color: #fff;
+  border: 1.5px solid #fff;
+  padding:12px;
+  font-size: small;
+}
+#button:hover{
+  background-color: #fff;
+  color: #6c7d5a;
+}
 @media (max-width: 576px) {
-    #ima {
-        width: 150px;
-        height: 200px;
-    }
+  #ima {
+      width: 150px;
+      height: 200px;
+  }
 
-    h1 {
-        font-size: 1.5rem;
-    }
+  h1 {
+      font-size: 1.5rem;
+  }
 
-    .navbar-brand img {
-        height: 100px;
-        margin-bottom:-20px;
-    }
+  .navbar-brand img {
+      height: 100px;
+      margin-bottom:-20px;
+  }
 
-    .navbar-nav {
-        text-align: center;
-    }
+  .navbar-nav {
+      text-align: center;
+  }
 
-    .navbar-nav .nav-link {
-        margin: 5px 0;
-    }
+  .navbar-nav .nav-link {
+      margin: 5px 0;
+  }
 }
 .blank {
-    height: 20px;
+  height: 20px;
 }
 
 

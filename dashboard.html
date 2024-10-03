@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptualize Your Event</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conceptualize Your Event</h1>
+        <form id="conceptualizeForm">
+            <label for="eventPurpose">Event Purpose:</label>
+            <select id="eventPurpose" name="eventPurpose" required>
+                <option value="">Select...</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="date">Preferred Date(s):</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="budget">Estimated Budget:</label>
+            <input type="text" id="budget" name="budget" required>
+
+            <label for="theme">Theme or Style:</label>
+            <select id="theme" name="theme">
+                <option value="">Select...</option>
+                <option value="Formal">Formal</option>
+                <option value="Casual">Casual</option>
+                <option value="Rustic">Rustic</option>
+                <option value="Modern">Modern</option>
+            </select>
+
+            <label for="venue">Venue Preferences:</label>
+            <select id="venue" name="venue">
+                <option value="">Select...</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Indoor">Indoor</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Restaurant">Restaurant</option>
+            </select>
+
+            <label for="foodBeverage">Food and Beverage:</label>
+            <select id="foodBeverage" name="foodBeverage">
+                <option value="">Select...</option>
+                <option value="Sit-Down">Sit-Down</option>
+                <option value="Buffet">Buffet</option>
+                <option value="Hors D'oeuvres">Hors D'oeuvres</option>
+            </select>
+
+            <label for="entertainment">Entertainment:</label>
+            <input type="checkbox" id="dj" name="entertainment" value="DJ">
+            <label for="dj" class="inline">DJ</label>
+            <input type="checkbox" id="liveBand" name="entertainment" value="Live Band">
+            <label for="liveBand" class="inline">Live Band</label>
+            <input type="checkbox" id="photoBooth" name="entertainment" value="Photo Booth">
+            <label for="photoBooth" class="inline">Photo Booth</label>
+
+            <label for="decorations">Decorations:</label>
+            <select id="decorations" name="decorations">
+                <option value="">Select...</option>
+                <option value="Flowers">Flowers</option>
+                <option value="Balloons">Balloons</option>
+                <option value="Lighting">Lighting</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formData"></div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
