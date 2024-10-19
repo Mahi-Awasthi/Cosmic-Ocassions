@@ -16,6 +16,11 @@ src: url('Aileron-Regular.otf');
 font-style: normal;
 }
 @font-face {
+  font-family: 'Absolute Beauty';
+  src: url('Absolute-Beauty-Script-Regular.otf') format('opentype');
+  font-style: normal;
+}
+@font-face {
 font-family:'LibreBaskerville-Regular';
 src: url('LibreBaskerville-Regular.ttf');
 src: local('Aileron-Regular'), local('LibreBaskerville-Regular'),
@@ -78,7 +83,11 @@ header {
   text-align: center;
   margin-bottom: 40px;
 }
-
+header h1{
+  font-family:'LibreBaskerville-Regular';
+  font-size:30px;
+  font-weight:bolder;
+}
 h1 {
   font-size: 32px;
   font-family: 'Baskervville SC', serif;
