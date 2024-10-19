@@ -1,86 +1,53 @@
-// Form Submission Logic
-document.getElementById('conceptualizeForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+const daysTag = document.querySelector(".days"),
+currentDate = document.querySelector(".current-date"),
+prevNextIcon = document.querySelectorAll(".icons span");
 
-  // Collect form data
-  let eventPurpose = document.getElementById('eventPurpose').value;
-  let guests = document.getElementById('guests').value;
-  let date = document.getElementById('date').value;
-  let budget = document.getElementById('budget').value;
-  let theme = document.getElementById('theme').value;
-  let venue = document.getElementById('venue').value;
-  let foodBeverage = document.getElementById('foodBeverage').value;
+let date = new Date(),
+currYear = date.getFullYear(),
+currMonth = date.getMonth();
 
-  // Collect entertainment preferences
-  let entertainment = [];
-  document.querySelectorAll('input[name="entertainment"]:checked').forEach(function(e) {
-      entertainment.push(e.value);
-  });
+const months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
 
-  let decorations = document.getElementById('decorations').value;
+const renderCalendar = () => {
+    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
+    lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
+    lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
+    lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+    let liTag = "";
 
-  // Display the collected data
-  let formData = `
-      <h2>Your Event Details:</h2>
-      <p><strong>Event Purpose:</strong> ${eventPurpose}</p>
-      <p><strong>Number of Guests:</strong> ${guests}</p>
-      <p><strong>Preferred Date(s):</strong> ${date}</p>
-      <p><strong>Estimated Budget:</strong> ${budget}</p>
-      <p><strong>Theme or Style:</strong> ${theme}</p>
-      <p><strong>Venue Preferences:</strong> ${venue}</p>
-      <p><strong>Food and Beverage:</strong> ${foodBeverage}</p>
-      <p><strong>Entertainment:</strong> ${entertainment.join(', ')}</p>
-      <p><strong>Decorations:</strong> ${decorations}</p>
-  `;
+    for (let i = firstDayofMonth; i > 0; i--) { // creating li of previous month last days
+        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+    }
 
-  document.getElementById('formData').innerHTML = formData;
-});
+    for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
+        // adding active class to li if the current day, month, and year matched
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
+                     && currYear === new Date().getFullYear() ? "active" : "";
+        liTag += `<li class="${isToday}">${i}</li>`;
+    }
 
-// Calendar Logic
-document.addEventListener("DOMContentLoaded", () => {
-  const calendarEl = document.getElementById('calendar');
-  
-  // Basic calendar data
-  let date = new Date();
-  let month = date.getMonth();
-  let year = date.getFullYear();
-  
-  function generateCalendar(month, year) {
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-      const firstDay = new Date(year, month, 1).getDay();
-      let calendar = '<table><tr>';
-    
-      const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    
-      daysOfWeek.forEach(day => {
-          calendar += `<th>${day}</th>`;
-      });
-      calendar += '</tr><tr>';
-    
-      // Padding before the first day
-      for (let i = 0; i < firstDay; i++) {
-          calendar += '<td></td>';
-      }
-    
-      // Filling the days
-      for (let day = 1; day <= daysInMonth; day++) {
-          if ((day + firstDay) % 7 === 0) {
-              calendar += `<td><div class="day">${day}</div></td></tr><tr>`;
-          } else {
-              calendar += `<td><div class="day">${day}</div></td>`;
-          }
-      }
-      calendar += '</tr></table>';
-    
-      calendarEl.innerHTML = calendar;
-  }
-  
-  generateCalendar(month, year);
-  
-  // Highlight dates with events (just an example)
-  document.querySelectorAll('.day').forEach(dayEl => {
-      if (parseInt(dayEl.textContent) === 25) {
-          dayEl.style.backgroundColor = '#f39c12';  // Mark 25th as an event day
-      }
-  });
+    for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+    }
+    currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
+    daysTag.innerHTML = liTag;
+}
+renderCalendar();
+
+prevNextIcon.forEach(icon => { // getting prev and next icons
+    icon.addEventListener("click", () => { // adding click event on both icons
+        // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+        if(currMonth < 0 || currMonth > 11) { // if current month is less than 0 or greater than 11
+            // creating a new date of current year & month and pass it as date value
+            date = new Date(currYear, currMonth, new Date().getDate());
+            currYear = date.getFullYear(); // updating current year with new date year
+            currMonth = date.getMonth(); // updating current month with new date month
+        } else {
+            date = new Date(); // pass the current date as date value
+        }
+        renderCalendar(); // calling renderCalendar function
+    });
 });
