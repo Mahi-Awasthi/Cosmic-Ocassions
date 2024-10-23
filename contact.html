@@ -147,7 +147,6 @@
         <button type="button" class="btn btn-success w-100" id="bu">Submit Now</button>
       </div>
 
-      <!-- Thank You message -->
       <div class="modal-body text-center d-none" id="thankYouMessage">
         <h3>Thank You!</h3>
         <p>We appreciate your feedback.</p>
@@ -159,7 +158,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    // Handle emoji selection
+   
     document.querySelectorAll('.emoji').forEach(emoji => {
         emoji.addEventListener('click', function() {
             document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
@@ -167,32 +166,32 @@
         });
     });
 
-    // Handle form submission
+
     document.getElementById('bu').addEventListener('click', function() {
-        // Get the selected emoji and comment
+       
         const selectedEmoji = document.querySelector('.emoji.selected').textContent;
         const comment = document.querySelector('textarea').value;
 
-        // Log the values (for debugging or use as needed)
+       
         console.log('Selected Emoji:', selectedEmoji);
         console.log('Comment:', comment);
 
-        // Hide feedback form and show Thank You message
+       
         document.getElementById('feedbackForm').classList.add('d-none');
         document.getElementById('thankYouMessage').classList.remove('d-none');
 
-        // Automatically close modal after a short delay
+        
         setTimeout(() => {
             var modalElement = document.getElementById('feedbackModal');
             var modalInstance = bootstrap.Modal.getInstance(modalElement);
             modalInstance.hide();
 
-            // Reset the form and message for future use
+          
             document.getElementById('feedbackForm').classList.remove('d-none');
             document.getElementById('thankYouMessage').classList.add('d-none');
             document.querySelector('textarea').value = '';
             document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
-        }, 2000); // 2 seconds delay before closing the modal
+        }, 2000); 
     });
 </script>
 
@@ -213,6 +212,7 @@
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="About.html">ABOUT</a></li>
         <li><a href="Expense Tracker.html">EXPENSE TRACKER</a></li>
+        <li><a href="dashboard1.html">DASHBOARD</a></li>
       </ul>
     </td>
     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

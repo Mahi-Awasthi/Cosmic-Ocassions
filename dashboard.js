@@ -1,7 +1,7 @@
 document.getElementById('conceptualizeForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Collect form data
+   
     let eventPurpose = document.getElementById('eventPurpose').value;
     let guests = document.getElementById('guests').value;
     let date = document.getElementById('date').value;
@@ -10,7 +10,7 @@ document.getElementById('conceptualizeForm').addEventListener('submit', function
     let venue = document.getElementById('venue').value;
     let foodBeverage = document.getElementById('foodBeverage').value;
     
-    // Collect entertainment preferences
+   
     let entertainment = [];
     document.querySelectorAll('input[name="entertainment"]:checked').forEach(function(e) {
         entertainment.push(e.value);
@@ -18,7 +18,7 @@ document.getElementById('conceptualizeForm').addEventListener('submit', function
 
     let decorations = document.getElementById('decorations').value;
 
-    // Display the collected data
+  
     let formData = `
         <h2>Your Event Details:</h2>
         <p><strong>Event Purpose:</strong> ${eventPurpose}</p>
