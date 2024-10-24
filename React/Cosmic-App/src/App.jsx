@@ -22,7 +22,6 @@ const App =() => {
       <Route path="/Services" element={<Services />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/ExpenseTracker" element={<ExpenseTracker />} />
-       
     </Routes>
   </Router>
   )
