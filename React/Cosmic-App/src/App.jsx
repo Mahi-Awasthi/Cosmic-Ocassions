@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Home.css';
 import './About.css'; 
 import './Contact.css'; 
+<<<<<<< HEAD
 import './Portfolio.css'; 
 import './Ceremonie.css'; 
 import './Mitzvahs.css'; 
@@ -13,9 +14,13 @@ import './Corporate.css';
 import './Dashboard.css'; 
 
 
+=======
+import './ExpenseTracker.css'; 
+>>>>>>> 9dfce5b1b62c53ab6a00600eabb8261495244518
 import Home from './assets/Home';
 import About from './assets/About';
 import Contact from './assets/Contact';
+<<<<<<< HEAD
 import Portfolio from './assets/Portfolio';
 import Ceremonie from './assets/Ceremonie';
 import  Mitzvahs from './assets/Mitzvahs';
@@ -26,6 +31,9 @@ import  Dashboard from './assets/Dashboard';
 
 
 
+=======
+import ExpenseTracker from './assets/ExpenseTracker';
+>>>>>>> 9dfce5b1b62c53ab6a00600eabb8261495244518
 
 
 const App =() => {
@@ -35,6 +43,7 @@ const App =() => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
+<<<<<<< HEAD
       <Route path="/Portfolio" element={<Portfolio />} />
       <Route path="/Ceremonie" element={<Ceremonie />} />
       <Route path="/Mitzvahs" element={<Mitzvahs />} />
@@ -45,6 +54,9 @@ const App =() => {
 
 
        
+=======
+      <Route path="/ExpenseTracker" element={<ExpenseTracker />} />
+>>>>>>> 9dfce5b1b62c53ab6a00600eabb8261495244518
     </Routes>
   </Router>
   )
