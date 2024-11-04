@@ -126,7 +126,7 @@ const Home = () => {
                   <li><Link to="/portfolio">PORTFOLIO</Link></li>
                   <li><Link to="/services">SERVICES</Link></li>
                   <li><Link to="/about">ABOUT</Link></li>
-                  <li><Link to="/ExpenseTracker">EXPENSE TRACKER</Link></li>
+                  <li><Link to="/expense-tracker">EXPENSE TRACKER</Link></li>
                 </ul>
             </td>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>

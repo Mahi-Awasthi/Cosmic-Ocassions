@@ -22,6 +22,7 @@ body {
 
 .navbar {
     height: 70px;
+
     background-color: #6c7d5a;
 }
 
@@ -57,10 +58,10 @@ body {
     height: 700px;
     object-fit: cover; 
 } */
-.un{
+.un1{
     
     height: 90vh;
-    background-image:url('services main.jpg');
+    background-image:url("services main.jpg");
     background-position: 50% 94%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,16 +71,16 @@ body {
     background-attachment: fixed;
  }
 
-#m {
+#ma {
     text-align: center;
     padding: 20px;
 }
 
-#S {
+#Sa {
     font-size: 1.5rem;
 }
 
-#p {
+#pa {
     font-size: 2rem;
     line-height: 1.5;
 }
@@ -94,7 +95,7 @@ body {
     padding: 20px;
 }
 
-#img {
+#img6 {
     margin: 20px;
     margin-top:-140px;
     height: auto;
@@ -103,12 +104,12 @@ body {
     
 }
 
-#written {
+#written1 {
     font-size: 2rem;
 }
 
 
-#main1 {
+#t{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -126,7 +127,7 @@ body {
     margin-bottom: 20px;
 }
 
-#count {
+#counting {
     display: flex;
     flex-wrap: wrap;
     font-size: 1rem;
@@ -137,7 +138,7 @@ body {
     justify-content: center;
 }
 
-#count li {
+#counting li {
     margin: 5px 15px;
 }
 footer{
@@ -244,30 +245,30 @@ footer{
         height: 400px; 
     }
 
-    #S {
+    #Sa{
         font-size: 1.25rem;
     }
 
-    #p {
+    #pa {
         font-size: 1.5rem;
     }
 
-    #img {
+    #img6 {
         width: 100%;
         max-width: 100%;
         height: 900px;
         margin-top:-140px;
     }
 
-    #written {
+    #written1 {
         font-size: 1.5rem;
     }
 
-    #count {
+    #counting {
         font-size: 0.875rem;
     }
 
-    #count li {
+    #counting li {
         margin: 5px;
     }
 }
@@ -282,50 +283,50 @@ footer{
         height: 300px; 
     }
 
-    #S {
+    #Sa {
         font-size: 1rem;
     }
 
-    #p {
+    #pa {
         font-size: 1.25rem;
     }
 
-    #img {
+    #img6 {
         width: 100%;
         max-width: 100%;
         height: 400px;
         margin-top:-140px;
     }
 
-    #written {
+    #written1 {
         font-size: 1rem;
     }
 
-    #count {
+    #counting {
         font-size: 0.75rem;
     }
 
-    #count li {
+    #counting li {
         margin: 5px 10px;
     }
 }
 @media (max-width: 425px) {
 
-    #img {
+    #img6 {
         width: 300px;
         max-width: 100%;
         margin-top:-1400px;
         height:400px;
     }
-    #written {
+    #written1{
         font-size: .5rem;
     }
 
-    #count {
+    #counting {
         font-size: 0.75rem;
     }
 
-    #count li {
+    #counting li {
         margin: 5px 10px;
     }
 }
