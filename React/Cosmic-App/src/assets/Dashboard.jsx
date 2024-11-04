@@ -32,11 +32,11 @@ const Dashboard = () => {
       <div className="sidebar1">
         <img src="S-removebg-preview.png" alt="Logo" id="logo" height="100px" width="120px" />
         <ul>
-          <li><Link to="/home">HOME</Link></li><br/>
+          <li><Link to="/">HOME</Link></li><br/>
           <li><Link to="/about">ABOUT</Link></li><br/>
           <li><Link to="/portfolio">PORTFOLIO</Link></li><br/>
           <li><Link to="/contact">CONTACT</Link></li><br/>
-          <li><Link to="/expense-tracker">EXPENSE TRACKER</Link></li>
+          <li><Link to="/expensetracker">EXPENSE TRACKER</Link></li>
         </ul>
       </div>
 

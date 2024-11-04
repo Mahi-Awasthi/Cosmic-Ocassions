@@ -72,7 +72,7 @@ const Contact = () => {
           Welcome to our Contact Page! Feel free to reach out to us anytime.
         </marquee>
 
-        <p id="p">
+        <p id="po">
           Cosmic Occasion is a full-service event planning and design firm.
           <br />
           Every detail you provide helps us craft a swift and thorough response,

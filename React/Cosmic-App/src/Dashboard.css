@@ -1,6 +1,4 @@
-/* Style adjustments as per the previous CSS */
-
- .dashboard-container1 {
+.dashboard-container1 {
     margin: 0;
     font-family: 'LibreBaskerville-Regular';
     display: flex;
@@ -36,8 +34,8 @@
     margin-left: 250px;
     flex-grow: 1;
     padding: 20px;
-    background-color: #ecf0f1;
-    height:1850px;
+    background-color: #fff;
+    height:1600px;
   }
   .main-content #dash{
     color:black;
