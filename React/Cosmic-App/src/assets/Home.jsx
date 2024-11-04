@@ -65,7 +65,7 @@ const Home = () => {
       </marquee>
 
       {/* TWO CARDS SECTION */}
-      <div className="container1">
+      <div className="container1"> 
         <div className="image-section">
           <img src="luxury-wedding-planner-michigan.jpg" alt="Decorative Image" />
         </div>
@@ -141,7 +141,7 @@ const Home = () => {
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
             <td id="three">
               <img src="COSMIC_OCCASSIONS-removebg-preview.png" id="lg" alt="Logo" /><br /><br />
-              <a href="contact.html" id="button">CONTACT</a>
+              <a href="/contact" id="button">CONTACT</a>
             </td>
           </tr>
         </table>
