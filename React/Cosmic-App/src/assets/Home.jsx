@@ -65,7 +65,7 @@ const Home = () => {
       </marquee>
 
       {/* TWO CARDS SECTION */}
-      <div className="container1">
+      <div className="container1"> 
         <div className="image-section">
           <img src="luxury-wedding-planner-michigan.jpg" alt="Decorative Image" />
         </div>
