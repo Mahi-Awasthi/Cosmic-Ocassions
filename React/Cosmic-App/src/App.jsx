@@ -22,8 +22,7 @@ import  Mitzvahs from './assets/Mitzvahs';
 import  Celebration from './assets/Celebration';
 import  Corporate from './assets/Corporate';
 import Reception from './assets/Reception';
-import  Dashboard from './assets/Dashboard';
-
+import Dashboard from './assets/Dashboard';
 
 
 
