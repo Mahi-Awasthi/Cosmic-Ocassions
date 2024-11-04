@@ -163,7 +163,6 @@ const ExpenseTracker = () => {
             <td id="one">
             <ul id="link">
                   <li><Link to="/portfolio">PORTFOLIO</Link></li>
-                  <li><Link to="/services">SERVICES</Link></li>
                   <li><Link to="/about">ABOUT</Link></li>
                   <li><Link to="/expensetracker">EXPENSE TRACKER</Link></li>
                   <li><Link to="/Dashboard">DASHBOARD</Link></li>

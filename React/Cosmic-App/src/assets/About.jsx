@@ -127,7 +127,6 @@ const About = () => {
             <td id="one">
             <ul id="link">
                   <li><Link to="/portfolio">PORTFOLIO</Link></li>
-                  <li><Link to="/services">SERVICES</Link></li>
                   <li><Link to="/about">ABOUT</Link></li>
                   <li><Link to="/expense-tracker">EXPENSE TRACKER</Link></li>
                   <li><Link to="/Dashboard">DASHBOARD</Link></li>
