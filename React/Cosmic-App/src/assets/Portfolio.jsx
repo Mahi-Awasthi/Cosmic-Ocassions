@@ -79,6 +79,8 @@ const Portfolio = () => {
                                 <li><Link to="/services">SERVICES</Link></li>
                                 <li><Link to="/about">ABOUT</Link></li>
                                 <li><Link to="/expense-tracker">EXPENSE TRACKER</Link></li>
+                                <li><Link to="/Dashboard">DASHBOARD</Link></li>
+
                             </ul>
                         </td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -107,31 +109,31 @@ const portfolioItems = [
         title: 'CELEBRATIONS',
         description: 'BIRTHDAY, HOLIDAYS AND JUST FOR FUNS',
         image: 'celebrations.jpg',
-        link: '/Celebration' // Changed to React Router Link
+        link: '/Celebration' 
     },
     {
         title: 'CEREMONIES',
         description: 'MULTICULTURAL, INDIAN, AMERICAN, AND CUSTOM WEDDING CEREMONIES',
         image: 'ceremony.jpeg',
-        link: '/Ceremonie' // Changed to React Router Link
+        link: '/Ceremonie' 
     },
     {
         title: 'RECEPTIONS',
         description: 'EVENING ENTERTAINMENT, AFTER PARTIES, & STUNNING RECEPTION EXPERIENCE',
         image: 'reception.jpeg',
-        link: '/Reception' // Changed to React Router Link
+        link: '/Reception' 
     },
     {
         title: 'CORPORATE EVENTS',
         description: 'COMPANY CELEBRATION & NETWORKING EVENTS OF EVERY SCALE',
         image: 'corporate events.jpeg',
-        link: '/Corporate' // Changed to React Router Link
+        link: '/Corporate' 
     },
     {
         title: 'MITZVAHS',
         description: 'BAR & BAT MITZVAHS',
         image: 'mitzvahs.jpeg',
-        link: '/Mitzvahs' // Changed to React Router Link
+        link: '/Mitzvahs' 
     }
 ];
 

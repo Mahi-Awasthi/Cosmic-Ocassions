@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Mitzvahs.css'; // Ensure this file exists
+import '../Mitzvahs.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const mitzvahCards = [
@@ -80,6 +80,8 @@ const Mitzvahs = () => {
                   <li><Link to="/services">SERVICES</Link></li>
                   <li><Link to="/about">ABOUT</Link></li>
                   <li><Link to="/expense-tracker">EXPENSE TRACKER</Link></li>
+                  <li><Link to="/Dashboard">DASHBOARD</Link></li>
+
                 </ul>
             </td>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>

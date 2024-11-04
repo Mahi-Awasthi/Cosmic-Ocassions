@@ -11,6 +11,7 @@ import './Celebration.css';
 import './Reception.css'; 
 import './Corporate.css'; 
 import './Dashboard.css'; 
+import './ExpenseTracker.css'; 
 
 
 import Home from './assets/Home';
@@ -23,6 +24,7 @@ import  Celebration from './assets/Celebration';
 import  Corporate from './assets/Corporate';
 import Reception from './assets/Reception';
 import Dashboard from './assets/Dashboard';
+import ExpenseTracker from './assets/ExpenseTracker';
 
 
 
@@ -41,6 +43,8 @@ const App =() => {
       <Route path="/Corporate" element={<Corporate />} />
       <Route path="/Reception" element={<Reception />} />
       <Route path="/Dashboard" element={<Dashboard />} />
+      <Route path="/ExpenseTracker" element={<ExpenseTracker />} />
+
 
     </Routes>
   </Router>
