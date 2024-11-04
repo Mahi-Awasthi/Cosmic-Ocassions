@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="main1">
+    <div className="main100">
       {/* NAVBAR SECTION */}
       <nav className="navbar navbar-expand-sm sticky-top navbar-dark" style={{ backgroundColor: '#6c7d5a' }}>
         <div className="container-fluid">
